@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        linear-gradient(135deg,
+            #f97316,
+            #ea580c);
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+
+    width: 90%;
+
+    max-width: 650px;
+
+    text-align: center;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, .2);
+}
+
+.container h1 {
+
+    color: #ea580c;
+
+    margin-bottom: 10px;
+}
+
+.container p {
+
+    color: #666;
+
+    margin-bottom: 20px;
+}
+
+.modes {
+
+    display: flex;
+
+    gap: 10px;
+
+    justify-content: center;
+
+    margin-bottom: 30px;
+}
+
+.mode-btn {
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    background: #e5e7eb;
+}
+
+.mode-btn.active {
+
+    background: #ea580c;
+
+    color: white;
+}
+
+.timer-box {
+
+    position: relative;
+
+    width: 280px;
+
+    margin: 0 auto 30px;
+}
+
+.timer {
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    font-size: 3rem;
+
+    font-weight: bold;
+
+    color: #ea580c;
+}
+
+.bg-circle {
+
+    fill: none;
+
+    stroke: #e5e7eb;
+
+    stroke-width: 10;
+}
+
+.progress-circle {
+
+    fill: none;
+
+    stroke: #ea580c;
+
+    stroke-width: 10;
+
+    stroke-linecap: round;
+
+    transform:
+        rotate(-90deg);
+
+    transform-origin: center;
+
+    stroke-dasharray: 754;
+
+    stroke-dashoffset: 0;
+}
+
+.controls {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-bottom: 30px;
+}
+
+.controls button {
+
+    border: none;
+
+    background: #ea580c;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.stats {
+
+    background: #f8fafc;
+
+    padding: 20px;
+
+    border-radius: 15px;
+}
+
+.stats h2 {
+
+    color: #ea580c;
+
+    margin-bottom: 10px;
+}
+
+@media(max-width:600px) {
+
+    .modes {
+
+        flex-direction: column;
+    }
+
+    .controls {
+
+        flex-direction: column;
+    }
+
+}

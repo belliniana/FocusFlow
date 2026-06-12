@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FocusFlow</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>FocusFlow</h1>
+
+        <p>
+            Mantenha o foco e aumente sua produtividade
+        </p>
+
+        <div class="modes">
+
+            <button class="mode-btn active" data-time="25">
+
+                Pomodoro
+
+            </button>
+
+            <button class="mode-btn" data-time="5">
+
+                Pausa Curta
+
+            </button>
+
+            <button class="mode-btn" data-time="15">
+
+                Pausa Longa
+
+            </button>
+
+        </div>
+
+        <div class="timer-box">
+
+            <svg width="280" height="280">
+
+                <circle cx="140" cy="140" r="120" class="bg-circle" />
+
+                <circle cx="140" cy="140" r="120" class="progress-circle" id="progressCircle" />
+
+            </svg>
+
+            <div class="timer" id="timer">
+
+                25:00
+
+            </div>
+
+        </div>
+
+        <div class="controls">
+
+            <button id="startBtn">
+                Iniciar
+            </button>
+
+            <button id="pauseBtn">
+                Pausar
+            </button>
+
+            <button id="resetBtn">
+                Resetar
+            </button>
+
+        </div>
+
+        <div class="stats">
+
+            <h2>
+                Estatísticas
+            </h2>
+
+            <p>
+                Sessões concluídas:
+                <span id="sessions">
+                    0
+                </span>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
